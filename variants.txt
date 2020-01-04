@@ -1,0 +1,20 @@
+v1
+    Reference software:
+        giftcofb128v1
+
+    Architecture description:
+        Implementation of GIFT-COFB, with n=128 and tau=128. Basic iterative architecture where 1 round of the GIFT-128 permutation is executed in 1 clock cycle.
+        
+    Key setup time:
+        0
+
+    Execution time of authenticated encryption:
+        112 + Na*50 + Nm*53
+
+    Execution time of authenticated decryption:
+        112 + Na*50 + Nm*53
+
+    Non-default generic settings:
+        G_W = 32
+        G_SW = 32
+        
